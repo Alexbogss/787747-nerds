@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Богачев](https://up.htmlacademy.ru/htmlcss/21/user/787747).
-* Наставник: [Полина Катышева] (https://htmlacademy.ru/profile/polina).
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
