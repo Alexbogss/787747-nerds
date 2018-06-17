@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия "Nerds"</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="site-navigation">
+      <a class="site-header-logo">
+        <img src="img/index-logo.svg" width="150" height="100" alt="Логоти дизайн-студии Nerds">
+      </a>
+      <ul class="site-navigation">
+        <li>
+          <a href="info.html">Cтудия</a>
+        </li>
+        <li>
+          <a href="clients.html">Клиенты</a>
+        </li>
+        <li class="site-navigation-current">
+          <a href="catalog.html">Магазин</a>
+        </li>
+        <li>
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <a class="basket" href="basket.html">Корзина</a>
+    </nav>
+    <h1>Магазин готовых шаблонов</h1>
+  </header>
+
+  <main class="site-page">
+    <section class="catalog-filtration">
+      <h2 hidden="true">Фильтр товаров</h2>
+      <!-- Здесь будет форма -->
+    </section>
+    <section class="catalog-sorting">
+      <h2 hidden="true">Сортровка товаров</h2>
+      <p>Сортировать:</p>
+      <div class="catalog-sort-buttons">
+        <ul class="catalog-sort-button-list">
+          <li>
+            <input type="button" value="По цене">
+          </li>
+          <li>
+            <input type="button" value="По цене">
+          </li>
+          <li>
+            <input type="button" value="По цене">
+          </li>
+        </ul>
+        <div class="catalog-order-buttons">
+          <input type="button" class="desc-button" value="">
+          <input type="button" class="asc-button" value="">
+        </div>
+      </div>
+    </section>
+    
+    <section class="catalog-list">
+      <h2 hidden="true">Готовые шаблоны</h2>
+      <ul class="catalog-template-list">
+        <li class="catalog-template-item">
+          <img src="img/catalog-sedona.jpeg" width="200" height="400">
+          <div class="catalog-description-window">
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="catalog-template-item">
+          <img src="img/catalog-pink.jpeg" width="200" height="400">
+          <div class="catalog-description-window">
+            <h3>Pink</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
+        </li>
+        <li class="catalog-template-item">
+          <div class="catalog-description-window">
+            <h3>Borodinski</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
+          <img src="img/catalog-borodinski.jpeg" width="200" height="400">
+        </li>
+        <li class="catalog-template-item">
+          <img src="img/catalog-mishka.jpeg" width="200" height="400">
+          <div class="catalog-description-window">
+            <h3>Mishka</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
+        </li>
+        <li class="catalog-template-item">
+          <img src="img/??.jpeg" width="200" height="400" alt="??">
+          <div class="catalog-description-window">
+            <h3>?</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
+        </li>
+        <li class="catalog-template-item">
+          <img src="img/catalog-kvast.jpeg" width="200" height="400">
+          <div class="catalog-description-window">
+            <h3>Kvast</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
+        </li>
+        <li class="catalog-template-item">
+          <img src="img/??.jpeg" width="200" height="400" alt="??">
+          <div class="description-window">
+            <h3>?</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="catalog-pagination-list">
+        <li class="catalog-pagination-item catalog-pagination-item-previous">
+          <a href="#">Предыдущая</a>
+        </li>
+        <li class="catalog-pagination-item selected">
+          <a>1</a>
+        </li>
+        <li class="catalog-pagination-item">
+          <a href="#">2</a>
+        </li>
+        <li class="catalog-pagination-item">
+          <a href="#">3</a>
+        </li>
+        <li class="catalog-pagination-item pagination-item-next">
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="sitemap">
+      <div class="siteaddress">
+        <b>Nerds Design Studio</b>
+        <p>191186, Санкт-Питербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7(812)275-75-75</p>
+        <a class="button" href="#"></a>
+      </div>
+      <img src="img/map.svg" width="100%" height="300">
+    </section>
+    <section class="site-social">
+      <ul class="site-social-list">
+        <li class="site-social-item">
+          <a class="site-social-button" href="#">Вконтакте</a>
+        </li>
+        <li class="site-social-item">
+          <a class="site-social-button" href="#">Facebook</a>
+        </li>
+        <li class="site-social-item">
+          <a class="site-social-button" href="#">Instagram</a>
+        </li>
+      </ul>
+      <div class="site-social-right-block">
+        <p>
+          <b>Давайте дружить, это выгодно!</b>
+        </p>
+        <p>Скидка 10% для друзей из социальных друзей.</p>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
