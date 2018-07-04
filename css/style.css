@@ -14,17 +14,12 @@ body {
     padding: 0; 
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
-    margin-left: 20px;
 }
 
 .container {
     margin: 0 auto;
     padding: 0 10px;
-    width: 1200px;
-}
-
-.relative {
-    position: relative;
+    max-width: 1200px;
 }
 
 .button {   
@@ -55,7 +50,7 @@ body {
 }
 
 .main-navigation {
-    height: 115px;
+    min-height: 115px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -65,13 +60,13 @@ body {
     line-height: 0;
     margin: 0 10px 1px;
 }
-a.main-header-logo {
+span.main-header-logo {
     opacity: 1.0;
 }
-a.main-header-logo:hover { 
+span.main-header-logo:hover { 
     opacity: 0.8;
 }
-a.main-header-logo:active {
+span.main-header-logo:active {
     opacity: 0.3;
 }
 
@@ -242,7 +237,7 @@ a.main-header-logo:active {
     height: 510px;
 }
 
-.about-us-left-block p.about-us-slogan {
+.about-us-left-block .about-us-slogan {
     margin: 65px 10px 0;
     font-weight: 500; 
     font-size: 45px;
