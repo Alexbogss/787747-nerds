@@ -746,3 +746,91 @@ button.filter-button {
 button.filter-button:focus {
     outline: 0;
 }
+
+.sorting {
+    margin-top: 19px;
+    margin-bottom: 46px;
+    display: flex;
+    width: 760px;
+    height: 40px;
+}
+
+.sorting p {
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.sorting > p {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.sort-buttons {
+    display: flex;
+}
+
+.order-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 37px;
+    margin-right: 0;
+    width: 40px;
+}
+
+.order-buttons a {
+    opacity: 0.3;
+    display: block;
+    width: 11px;
+    height: 10px;
+    margin: 5px 0 0 0;
+}
+
+.order-buttons a:hover {
+    opacity: 0.6;
+}
+
+.order-buttons a:active, 
+.order-buttons a.active  {
+    opacity: 1;
+}
+
+.order-buttons p:first-of-type a {
+    background: url("../img/icon-cursor-down-dir.svg") no-repeat;
+}
+
+.order-buttons p:last-of-type a {
+    background: url("../img/icon-cursor-up-dir.svg") no-repeat;
+}
+
+.sort-button-list {
+    margin: 10px 0px 8px 214px;
+    display: flex;
+    list-style: none;
+}
+
+.sort-button-list a{    
+    text-transform: uppercase;
+}
+
+.sort-button-list a{
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: none;
+    color: inherit;
+    opacity: 0.3;
+}
+
+.sort-button-list a:hover {
+    opacity: 0.6;
+}
+
+.sort-button-list a:active, 
+.sort-button-list a.active {
+    opacity: 1;
+}
+
+.sort-button-list li {
+    margin: 2px 11px 0 14px;
+}
