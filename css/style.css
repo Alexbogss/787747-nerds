@@ -128,13 +128,26 @@ span.main-header-logo:active {
     opacity: 1.0;
 }
 
-.navigation-item:hover {
+.navigation-item:hover:not(.selected) {
     color: #fb565a;
 }
 
-.navigation-item:active:not {
+.navigation-item:active:not(.selected) {
     color: black;
     opacity: 0.3;
+}
+.navigation-list .selected {
+    position: relative;
+}
+
+.navigation-list .selected::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #fb565a;
+    position: absolute;
+    left: 0px;
+    top: 28px;
 }
 
 .cart-item {
@@ -518,4 +531,218 @@ span.main-header-logo:active {
 .social-description {
     margin: 12px 0 0;
     padding: 0;
+}
+
+.main-header > h1 {
+    margin: 37px auto;
+    font-size: 55px;
+    line-height: 55px;
+    padding: 40px 21px 99px 0;
+    text-align: center;    
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.filtres {
+    margin-left: 10px;
+    width: 260px;
+}
+
+.filtres input + label:hover {
+    opacity: 1;
+}
+
+.filtres label {
+    padding: 8px 6px 8px 35px;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.4;
+}
+
+.filtres legend {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cost{
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 27px;
+    text-transform: uppercase;
+}
+
+.cost b{
+    font-weight: bold;
+    margin: 0;
+}
+
+.range-filter {
+    padding-top: 48px;
+    width: 260px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 13px;
+    padding: 0 30px;
+    background: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.scale {
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+
+.bar {
+    height: 2px;
+    background: #00ca74;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.min-toggle, .max-toggle{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.toggle.min-toggle {
+    left: 70px;
+}
+
+.toggle.max-toggle {
+    left: 165px;
+}
+
+.price-controls input{
+    width: 58px;
+    height: 22px;
+    padding: 8px 10px;
+    margin-left: 8px;
+    border: none;
+    background: #eeeeee;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+}
+
+.price-controls input:first-child{
+    margin-right: 30px;
+    margin-left: 10px; 
+}
+
+.price-controls {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.grid {
+    padding-left: 0;
+    border: none;
+    margin-top: 58px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.grid ul {
+    margin-bottom: 17px;
+    margin-top: 13px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.grid input {
+    display:none;
+}
+
+.grid li {
+    margin-bottom: 17px;
+}
+
+.grid label {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.4;
+}
+
+.grid input + label {
+    background: url("../img/icon-radio-off.svg") left no-repeat;
+    cursor: pointer;
+}
+
+.grid input:checked + label {
+    background: url("../img/icon-radio-on.svg") left no-repeat;
+}
+
+.props {
+    border: none;
+    margin-top: 18px;
+    padding-left: 0;
+}
+
+.props {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.props ul {
+    margin-top: 9px;
+    padding: 2px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.props input {
+    display:none;
+}
+
+.props li {
+    margin-bottom: 17px;
+}
+
+.props label {
+    font-size: 16px;
+    line-height: 20px;
+    background: url("../img/icon-checkbox-off.svg") left 50% no-repeat;
+    cursor: pointer;
+    padding-left: 34px;
+    margin-bottom: 5px;
+}
+
+.props input:checked + label {
+    background: url("../img/icon-checkbox-on.svg") left 50%  no-repeat;
+}
+
+.button-gray {  
+    background: #eeeeee;
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+button.filter-button {
+    border: none;
+    width: 260px;
+    height: 50px;
+}
+
+button.filter-button:focus {
+    outline: 0;
 }
